@@ -1,0 +1,41 @@
+.masthead .intro-body .brand-heading {
+  text-shadow: 0px -1px 2px #00ff38, 0px -3px 6px rgb(48,96,0), 0px -6px 12px rgb(0,110,157), 0px -10px 20px rgb(189,255,0), 0px -15px 30px rgb(0,255,71), 0px -21px 42px rgb(66,255,0);
+}
+
+body {
+  background-color: #000;
+}
+
+.brand-heading {
+  color: #fff;
+  font-size: 1em;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  text-shadow: -27px -1px 2px white, 0px -3px 6px rgba(255,200,200,1), 0px -6px 12px rgb(0,255,194), 0px -10px 20px rgb(20,255,0), 0px -15px 30px rgb(0,225,63), 0px -21px 42px rgb(12,152,118);
+  animation: fire 30s ease infinite,colorSpin 30s linear infinite;
+  font-family: Sans-serif;
+}
+
+@keyframes fire {
+  50% {
+    text-shadow: 0px -4px 8px white, 0px -12px 24px rgb(159,124,0), 0px -24px 48px rgba(255,150,100,1), 0px -40px 80px rgb(0,255,194), 0px -60px 120px rgb(0,255,56), 0px -84px 168px rgb(5,0,255);
+  }
+}
+
+@keyframes colorSpin {
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.btn-default {
+  color: var(--bs-blue);
+}
+
+#fps {
+  font-size: medium;
+}
+
